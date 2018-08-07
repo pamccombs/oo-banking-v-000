@@ -8,6 +8,9 @@ class Transfer
     @sender = sender
     @receiver = receiver
     @status= "pending"
+  end
+  
+  def valid
     
   end
 end
