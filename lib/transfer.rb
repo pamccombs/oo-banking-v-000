@@ -29,6 +29,9 @@ class Transfer
     if valid? && @receiver.balance > amount && @status == "completed"
       @sender.balance += amount
       @receiver.balance -= amount
+      @status= "reversed"
+    else
+      
   end
   
 end
